@@ -39,10 +39,10 @@
           <img src="../assets/img/nervos-logo.svg" class="center-image" />
         </el-col>
         <el-col :span="4">
-          <img src="../assets/img/Rust.svg" />
+          <img src="../assets/img/Rust.svg" class="center-image" />
         </el-col>
         <el-col :span="4">
-          <img src="../assets/img/Community.svg" />
+          <img src="../assets/img/Community.svg" class="center-image" />
         </el-col>
       </el-row>
       <el-row>
@@ -118,7 +118,6 @@ export default {
 </script>
 
 <style scoped>
-@import "element-ui/lib/theme-chalk/display.css";
 .main {
   margin-top: 5rem;
 }
