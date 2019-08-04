@@ -31,12 +31,12 @@
           >Serios provides tools to write, deploy and operate decentralized applications. We also protect leading organizations by performing security audits on their systems and products.</p>
         </el-col>
         <el-col :span="7">
-          <img src="../assets/img/main-right.svg" />
+          <img src="../assets/img/main-right.svg" class="center-image" />
         </el-col>
       </el-row>
-      <el-row class="main_2">
+      <el-row class="main_2" :align="middle">
         <el-col :offset="6" :span="4">
-          <img src="../assets/img/nervos-logo.svg" />
+          <img src="../assets/img/nervos-logo.svg" class="center-image" />
         </el-col>
         <el-col :span="4">
           <img src="../assets/img/Rust.svg" />
@@ -118,13 +118,19 @@ export default {
 </script>
 
 <style scoped>
+@import "element-ui/lib/theme-chalk/display.css";
 .main {
   margin-top: 5rem;
+}
+.center-image {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .el-menu.el-menu--horizontal {
   border-bottom: 0px;
 }
-.el-divider--horizontal{
+.el-divider--horizontal {
   margin-bottom: 0.3rem;
 }
 .topHeader {
@@ -178,7 +184,7 @@ export default {
   margin: 5rem 0;
   background: url("../assets/img/symbol.svg") no-repeat center;
 }
-.footer-image{
+.footer-image {
   margin: 0;
 }
 </style>
