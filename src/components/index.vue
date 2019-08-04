@@ -3,7 +3,7 @@
     <el-header>
       <el-row type="flex" :align="middle">
         <el-col :span="10" :offset="2">
-          <img src="../assets/serios-logo.svg" alt class="header-image" />
+          <img src="../assets/img/serios-logo.svg" alt class="header-image" />
         </el-col>
         <el-col :span="10">
           <el-menu class="topHeader" mode="horizontal">
@@ -22,25 +22,82 @@
     <el-main class="main">
       <el-row type="flex" :align="middle">
         <el-col :span="7">
-          <img src="../assets/main-left.svg" >
+          <img src="../assets/img/main-left.svg" />
         </el-col>
         <el-col :span="10">
           <h1>The standard for secure blockchain applications</h1>
-          <p style="text-align: justify;">Serios provides tools to write, deploy and operate decentralized applications. We also protect leading organizations by performing security audits on their systems and products.</p>
+          <p
+            style="text-align: justify;"
+          >Serios provides tools to write, deploy and operate decentralized applications. We also protect leading organizations by performing security audits on their systems and products.</p>
         </el-col>
         <el-col :span="7">
-          <img src="../assets/main-right.svg" >
+          <img src="../assets/img/main-right.svg" />
         </el-col>
       </el-row>
       <el-row class="main_2">
         <el-col :offset="6" :span="4">
-          <img src="../assets/nervos-logo.svg">
+          <img src="../assets/img/nervos-logo.svg" />
         </el-col>
         <el-col :span="4">
-          <img src="../assets/Rust.svg">
+          <img src="../assets/img/Rust.svg" />
         </el-col>
         <el-col :span="4">
-          <img src="../assets/Community.svg">
+          <img src="../assets/img/Community.svg" />
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="20" :push="2" class="main_3">
+          <el-row>
+            <el-col :span="24">
+              <h3 class="what_offer">What We Offer ?</h3>
+            </el-col>
+            <el-col :span="6" :push="3">
+              <img src="../assets/img/MAGi.png" style="margin-bottom:9px;" />
+              <p
+                class="content-title"
+              >A library of modular, reusable, secure smart contracts for the Nervos network, written in JS.</p>
+              <div class="content-main">
+                <p>Leverage standard, tested, and community-reviewed contracts.</p>
+                <p>Most popular library in the industry.</p>
+                <p>Learn from best practices adopted by the ecosystem.</p>
+                <p>Reduce your attack surface by reusing audited code.</p>
+              </div>
+            </el-col>
+            <el-col :span="6" :push="3">
+              <img src="../assets/img/sdk.png" />
+              <p
+                class="content-title"
+              >A suite of tools to help you develop, test, upgrade, and deploy smart contracts.</p>
+              <div class="content-main">
+                <p>Leverage standard, tested, and community-reviewed contracts.</p>
+                <p>Most popular library in the industry.</p>
+                <p>Learn from best practices adopted by the ecosystem.</p>
+                <p>Reduce your attack surface by reusing audited code.</p>
+              </div>
+            </el-col>
+            <el-col :span="6" :push="3">
+              <img src="../assets/img/ide.png" style="margin-bottom:2px;" />
+              <p
+                class="content-title"
+              >A suite of tools to help you develop, test, upgrade, and deploy smart contracts.</p>
+              <div class="content-main">
+                <p>Leverage standard, tested, and community-reviewed contracts.</p>
+                <p>Most popular library in the industry.</p>
+                <p>Learn from best practices adopted by the ecosystem.</p>
+                <p>Reduce your attack surface by reusing audited code.</p>
+              </div>
+            </el-col>
+          </el-row>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="10" :push="7">
+          <div class="evaluation">
+          <p
+            class="evaluation-text"
+          >It’s difficult to manage and fix problems in decentralized systems once they're deployed.Serios offers the perfect combination of quality results and safty.Its flexible set of tools allows us to build complicated dapps that just wouldn’t be available to us.</p>
+          </div>
+          <img src="../assets/img/ryan.svg" alt="">
         </el-col>
       </el-row>
     </el-main>
@@ -55,8 +112,8 @@ export default {
 </script>
 
 <style scoped>
-.main{
-  margin-top:5rem;
+.main {
+  margin-top: 5rem;
 }
 .el-menu.el-menu--horizontal {
   border-bottom: 0px;
@@ -68,7 +125,47 @@ export default {
   float: left;
   margin-top: 0.45rem;
 }
-.main_2{
-  margin-top:5rem;
+.main_2 {
+  margin-top: 5rem;
+}
+.main_3 {
+  margin-top: 5rem;
+  background: rgba(32, 32, 38, 1);
+  border-radius: 10px;
+}
+.what_offer {
+  font-size: 24px;
+  font-family: Helvetica;
+  color: rgba(255, 255, 255, 1);
+  line-height: 29px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.content-title {
+  /* height: 69px; */
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 23px;
+}
+.content-main {
+  margin-bottom: 5rem;
+}
+.content-main > p {
+  margin: 1.5rem 22%;
+  width: 246px;
+  font-size: 14px;
+  font-family: AppleSystemUIFont;
+  color: rgba(255, 255, 255, 1);
+  line-height: 23px;
+  text-align: left;
+}
+.evaluation-text {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 32px;
+  text-align: justify;
+}
+.evaluation{
+  background: url("../assets/img/symbol.svg") no-repeat center;
 }
 </style>
