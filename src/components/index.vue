@@ -93,15 +93,21 @@
       <el-row>
         <el-col :span="10" :push="7">
           <div class="evaluation">
-          <p
-            class="evaluation-text"
-          >It’s difficult to manage and fix problems in decentralized systems once they're deployed.Serios offers the perfect combination of quality results and safty.Its flexible set of tools allows us to build complicated dapps that just wouldn’t be available to us.</p>
+            <p
+              class="evaluation-text"
+            >It’s difficult to manage and fix problems in decentralized systems once they're deployed.Serios offers the perfect combination of quality results and safty.Its flexible set of tools allows us to build complicated dapps that just wouldn’t be available to us.</p>
+            <img src="../assets/img/ryan.svg" alt />
+            <p style="font-size:18px;font-weight:600;margin:0px;">Ryan</p>
+            <p style="font-size:16px;margin-top:5px;">Head of CTO of nervos</p>
           </div>
-          <img src="../assets/img/ryan.svg" alt="">
         </el-col>
       </el-row>
     </el-main>
-    <el-footer>Footer</el-footer>
+    <el-divider></el-divider>
+    <el-footer>
+      <img src="../assets/img/serios-logo.svg" class="footer-image" />
+      <p style="margin:0;">© 2019. All rights reserved.</p>
+    </el-footer>
   </el-container>
 </template>
 
@@ -117,6 +123,9 @@ export default {
 }
 .el-menu.el-menu--horizontal {
   border-bottom: 0px;
+}
+.el-divider--horizontal{
+  margin-bottom: 0.3rem;
 }
 .topHeader {
   float: right;
@@ -165,7 +174,11 @@ export default {
   line-height: 32px;
   text-align: justify;
 }
-.evaluation{
+.evaluation {
+  margin: 5rem 0;
   background: url("../assets/img/symbol.svg") no-repeat center;
+}
+.footer-image{
+  margin: 0;
 }
 </style>
