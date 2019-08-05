@@ -5,7 +5,7 @@
         <el-col :span="10" :offset="2">
           <img src="../assets/img/serios-logo.svg" alt class="header-image" />
         </el-col>
-        <el-col :span="10">
+        <el-col :span="10" class="hidden-sm-and-down">
           <el-menu class="topHeader" mode="horizontal">
             <el-menu-item index="1">Products</el-menu-item>
             <el-menu-item index="2">Github</el-menu-item>
@@ -21,27 +21,27 @@
     </el-header>
     <el-main class="main">
       <el-row type="flex" :align="middle">
-        <el-col :span="7">
+        <el-col :span="7" class="hidden-sm-and-down">
           <img src="../assets/img/main-left.svg" />
         </el-col>
-        <el-col :span="10">
+        <el-col :lg="10" :xs="24">
           <h1>The standard for secure blockchain applications</h1>
           <p
             style="text-align: justify;"
           >Serios provides tools to write, deploy and operate decentralized applications. We also protect leading organizations by performing security audits on their systems and products.</p>
         </el-col>
-        <el-col :span="7">
+        <el-col class="hidden-sm-and-down" :span="7">
           <img src="../assets/img/main-right.svg" class="center-image" />
         </el-col>
       </el-row>
-      <el-row class="main_2" type="flex" :align="middle">
-        <el-col :offset="6" :span="4">
-          <img src="../assets/img/nervos-logo.svg" class="center-image" />
+      <el-row class="main_2" :align="middle">
+        <el-col :xs="24" :md="{span:4,offset:6}">
+          <img src="../assets/img/nervos-logo.svg" class="center-image mobile_image" />
         </el-col>
-        <el-col :span="4">
+        <el-col :xs="24" :md="4">
           <img src="../assets/img/Rust.svg" class="center-image" />
         </el-col>
-        <el-col :span="4">
+        <el-col :xs="24" :md="4">
           <img src="../assets/img/Community.svg" class="center-image" />
         </el-col>
       </el-row>
@@ -51,7 +51,7 @@
             <el-col :span="24">
               <h3 class="what_offer">What We Offer ?</h3>
             </el-col>
-            <el-col :span="6" :push="3">
+            <el-col :xs="{span:18,push:3}" :md="{span:6,push:3}">
               <img src="../assets/img/MAGi.png" style="margin-bottom:9px;" />
               <p
                 class="content-title"
@@ -63,7 +63,7 @@
                 <p>Reduce your attack surface by reusing audited code.</p>
               </div>
             </el-col>
-            <el-col :span="6" :push="3">
+            <el-col :xs="{span:18,push:3}" :md="{span:6,push:3}">
               <img src="../assets/img/sdk.png" />
               <p
                 class="content-title"
@@ -75,7 +75,7 @@
                 <p>Reduce your attack surface by reusing audited code.</p>
               </div>
             </el-col>
-            <el-col :span="6" :push="3">
+            <el-col :xs="{span:18,push:3}" :md="{span:6,push:3}">
               <img src="../assets/img/ide.png" style="margin-bottom:2px;" />
               <p
                 class="content-title"
@@ -95,10 +95,10 @@
           <div class="evaluation">
             <p
               class="evaluation-text"
-            >It’s difficult to manage and fix problems in decentralized systems once they're deployed.Serios offers the perfect combination of quality results and safty.Its flexible set of tools allows us to build complicated dapps that just wouldn’t be available to us.</p>
+            >Serios is a development environment including tools making smart contract development faster and easier.Developers only need Bytes level CKB space comparing KB level and directly deploy JS code, making development more efficient.</p>
             <img src="../assets/img/ryan.svg" alt />
             <p style="font-size:18px;font-weight:600;margin:0px;">Ryan</p>
-            <p style="font-size:16px;margin-top:5px;">Head of CTO of nervos</p>
+            <p style="font-size:16px;margin-top:5px;">Head of CTO of Nervos</p>
           </div>
         </el-col>
       </el-row>
@@ -120,11 +120,6 @@ export default {
 <style scoped>
 .main {
   margin-top: 5rem;
-}
-.center-image {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .el-menu.el-menu--horizontal {
   border-bottom: 0px;
@@ -164,15 +159,6 @@ export default {
 .content-main {
   margin-bottom: 5rem;
 }
-.content-main > p {
-  margin: 1.5rem 22%;
-  width: 246px;
-  font-size: 14px;
-  font-family: AppleSystemUIFont;
-  color: rgba(255, 255, 255, 1);
-  line-height: 23px;
-  text-align: left;
-}
 .evaluation-text {
   font-size: 20px;
   color: rgba(0, 0, 0, 1);
@@ -185,5 +171,30 @@ export default {
 }
 .footer-image {
   margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .mobile_image {
+    margin-bottom: 5px;
+  }
+  .content-main > p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .center-image {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .content-main > p {
+    margin: 1.5rem 22%;
+    width: 246px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 23px;
+    text-align: left;
+  }
 }
 </style>
