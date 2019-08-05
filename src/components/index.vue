@@ -6,16 +6,19 @@
           <img src="../assets/img/serios-logo.svg" alt class="header-image" />
         </el-col>
         <el-col :span="10" class="hidden-sm-and-down">
-          <el-menu class="topHeader" mode="horizontal">
+          <button class="header-nav" type="text">About</button>
+          <button class="header-nav" type="text">Github</button>
+          <button class="header-nav" type="text">Docs</button>
+          <!-- <el-menu class="topHeader" mode="horizontal">
             <el-menu-item index="1">Docs</el-menu-item>
             <el-menu-item index="2">Github</el-menu-item>
             <el-menu-item index="3">About</el-menu-item>
-            <!-- <el-submenu index="4">
+            <el-submenu index="4">
               <template slot="title">Language</template>
               <el-menu-item index="4-1">English</el-menu-item>
               <el-menu-item index="4-2">中文</el-menu-item>
-            </el-submenu> -->
-          </el-menu>
+            </el-submenu>
+          </el-menu> -->
         </el-col>
       </el-row>
     </el-header>
@@ -124,8 +127,14 @@ export default {
 .el-menu.el-menu--horizontal {
   border-bottom: 0px;
 }
+.el-menu--horizontal > .el-menu-item.is-active {
+  border-bottom: 0px;
+}
 .el-divider--horizontal {
   margin-bottom: 0.3rem;
+}
+.el-button:focus, .el-button:hover,.el-button:active,.el-button:visited{
+  color: black;
 }
 .topHeader {
   float: right;
@@ -168,6 +177,17 @@ export default {
   margin: 0;
 }
 
+.header-nav {
+  float: right;
+  height: 60px;
+  margin-left: 70px !important;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+}
+.el-button+.el-button{
+  margin-left: 0;
+}
 @media screen and (max-width: 992px) {
   .mobile_image {
     margin-bottom: 5px;
@@ -178,7 +198,7 @@ export default {
   }
   .evaluation-text {
     color: rgba(0, 0, 0, 1);
-    text-align:inherit;
+    text-align: inherit;
   }
 }
 @media screen and (min-width: 992px) {
