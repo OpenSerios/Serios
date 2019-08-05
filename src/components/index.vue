@@ -6,7 +6,7 @@
           <img src="../assets/img/serios-logo.svg" alt class="header-image" />
         </el-col>
         <el-col :span="10" class="hidden-sm-and-down">
-          <a class="header-nav" href="#">Github</a>
+          <a class="header-nav" href="https://github.com/OpenSerios">Github</a>
           <a class="header-nav" href="#">Docs</a>
           <a class="header-nav" href="#">About</a>
           <!-- <el-menu class="topHeader" mode="horizontal">
