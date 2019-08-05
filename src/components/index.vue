@@ -6,9 +6,9 @@
           <img src="../assets/img/serios-logo.svg" alt class="header-image" />
         </el-col>
         <el-col :span="10" class="hidden-sm-and-down">
-          <a class="header-nav"  href="#">Github</a>
-          <a class="header-nav"  href="#">Docs</a>
-          <a class="header-nav"  href="#">About</a>
+          <a class="header-nav" href="#">Github</a>
+          <a class="header-nav" href="#">Docs</a>
+          <a class="header-nav" href="#">About</a>
           <!-- <el-menu class="topHeader" mode="horizontal">
             <el-menu-item index="1">Docs</el-menu-item>
             <el-menu-item index="2">Github</el-menu-item>
@@ -18,7 +18,7 @@
               <el-menu-item index="4-1">English</el-menu-item>
               <el-menu-item index="4-2">中文</el-menu-item>
             </el-submenu>
-          </el-menu> -->
+          </el-menu>-->
         </el-col>
       </el-row>
     </el-header>
@@ -56,38 +56,41 @@
             </el-col>
             <el-col :xs="{span:18,push:3}" :md="{span:6,push:3}">
               <img src="../assets/img/MAGi.png" style="margin-bottom:9px;" />
+              <p class="content-title">MAGi</p>
               <p
                 class="content-title"
-              >A library of modular, reusable, secure smart contracts for the Nervos network, written in JS.</p>
+              >A JS Engine for Developers to write JS Scripts for the Nervos Network, written in C.</p>
               <div class="content-main">
-                <p>Leverage standard, tested, and community-reviewed contracts.</p>
-                <p>Most popular library in the industry.</p>
-                <p>Learn from best practices adopted by the ecosystem.</p>
+                <p>Leverage standard, tested, and community-reviewed Scripts.</p>
+                <p>Only need Bytes level CKB Space comparing KB level.</p>
                 <p>Reduce your attack surface by reusing audited code.</p>
+                <p>Most popular Engine in the industry.</p>
               </div>
             </el-col>
             <el-col :xs="{span:18,push:3}" :md="{span:6,push:3}">
               <img src="../assets/img/sdk.png" />
+              <p class="content-title">SDK</p>
               <p
                 class="content-title"
-              >A suite of tools to help you develop, test, upgrade, and deploy smart contracts.</p>
+              >A suite of tools to help you develop, test, upgrade, and deploy CKB Scripts.</p>
               <div class="content-main">
-                <p>Leverage standard, tested, and community-reviewed contracts.</p>
-                <p>Most popular library in the industry.</p>
-                <p>Learn from best practices adopted by the ecosystem.</p>
-                <p>Reduce your attack surface by reusing audited code.</p>
+                <p>Easy bug-fixing and quick iterations via CKB Script upgrades.</p>
+                <p>Interactive commands to accelerate local development.</p>
+                <p>Seamless integration with Serios MAGi.</p>
+                <p>Multi-network support.</p>
               </div>
             </el-col>
             <el-col :xs="{span:18,push:3}" :md="{span:6,push:3}">
               <img src="../assets/img/ide.png" style="margin-bottom:2px;" />
+              <p class="content-title">Online IDE</p>
               <p
                 class="content-title"
-              >A suite of tools to help you develop, test, upgrade, and deploy smart contracts.</p>
+              >A real hacker IDE, help designers to do agile development.</p>
               <div class="content-main">
-                <p>Leverage standard, tested, and community-reviewed contracts.</p>
-                <p>Most popular library in the industry.</p>
-                <p>Learn from best practices adopted by the ecosystem.</p>
-                <p>Reduce your attack surface by reusing audited code.</p>
+                <p>Swift,Simple,Smart.</p>
+                <p>First OnlineIDE support Nervos.</p>
+                <p>One click to compile, deploy, test the contract.</p>
+                <p>Interactive tutorial to assist your first dapp.</p>
               </div>
             </el-col>
           </el-row>
@@ -98,7 +101,7 @@
           <div class="evaluation">
             <p
               class="evaluation-text"
-            >Serios is a development environment including tools making smart contract development faster and easier.Developers only need Bytes level CKB space comparing KB level and directly deploy JS code, making development more efficient.</p>
+            >Serios is a development environment including tools making Scripts development faster and easier. Developers only need Bytes level CKB space comparing KB level and directly deploy JS code, making development more efficient.</p>
             <img src="../assets/img/ryan.svg" alt />
             <p style="font-size:18px;font-weight:600;margin:0px;">Ryan</p>
             <p style="font-size:16px;margin-top:5px;">Business Manager of Nervos</p>
@@ -133,7 +136,10 @@ export default {
 .el-divider--horizontal {
   margin-bottom: 0.3rem;
 }
-.el-button:focus, .el-button:hover,.el-button:active,.el-button:visited{
+.el-button:focus,
+.el-button:hover,
+.el-button:active,
+.el-button:visited {
   color: black;
 }
 .topHeader {
@@ -186,10 +192,10 @@ export default {
   color: black;
   font-size: 15px;
   font-weight: 400;
-  border:0;
-  text-decoration:none;
+  border: 0;
+  text-decoration: none;
 }
-.el-button+.el-button{
+.el-button + .el-button {
   margin-left: 0;
 }
 @media screen and (max-width: 992px) {
