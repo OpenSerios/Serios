@@ -7,14 +7,14 @@
         </el-col>
         <el-col :span="10" class="hidden-sm-and-down">
           <el-menu class="topHeader" mode="horizontal">
-            <el-menu-item index="1">Products</el-menu-item>
+            <el-menu-item index="1">Docs</el-menu-item>
             <el-menu-item index="2">Github</el-menu-item>
             <el-menu-item index="3">About</el-menu-item>
-            <el-submenu index="4">
+            <!-- <el-submenu index="4">
               <template slot="title">Language</template>
               <el-menu-item index="4-1">English</el-menu-item>
               <el-menu-item index="4-2">中文</el-menu-item>
-            </el-submenu>
+            </el-submenu> -->
           </el-menu>
         </el-col>
       </el-row>
@@ -91,14 +91,14 @@
         </el-col>
       </el-row>
       <el-row>
-        <el-col :span="10" :push="7">
+        <el-col :md="{span:10,push:7}" :xs="{span:18,push:3}">
           <div class="evaluation">
             <p
               class="evaluation-text"
             >Serios is a development environment including tools making smart contract development faster and easier.Developers only need Bytes level CKB space comparing KB level and directly deploy JS code, making development more efficient.</p>
             <img src="../assets/img/ryan.svg" alt />
             <p style="font-size:18px;font-weight:600;margin:0px;">Ryan</p>
-            <p style="font-size:16px;margin-top:5px;">Head of CTO of Nervos</p>
+            <p style="font-size:16px;margin-top:5px;">Business Manager of Nervos</p>
           </div>
         </el-col>
       </el-row>
@@ -159,12 +159,7 @@ export default {
 .content-main {
   margin-bottom: 5rem;
 }
-.evaluation-text {
-  font-size: 20px;
-  color: rgba(0, 0, 0, 1);
-  line-height: 32px;
-  text-align: justify;
-}
+
 .evaluation {
   margin: 5rem 0;
   background: url("../assets/img/symbol.svg") no-repeat center;
@@ -177,9 +172,13 @@ export default {
   .mobile_image {
     margin-bottom: 5px;
   }
-  .content-main > p{
+  .content-main > p {
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
+  }
+  .evaluation-text {
+    color: rgba(0, 0, 0, 1);
+    text-align:inherit;
   }
 }
 @media screen and (min-width: 992px) {
@@ -195,6 +194,12 @@ export default {
     color: rgba(255, 255, 255, 1);
     line-height: 23px;
     text-align: left;
+  }
+  .evaluation-text {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 32px;
+    text-align: justify;
   }
 }
 </style>
