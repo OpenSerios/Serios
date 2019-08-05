@@ -6,9 +6,9 @@
           <img src="../assets/img/serios-logo.svg" alt class="header-image" />
         </el-col>
         <el-col :span="10" class="hidden-sm-and-down">
-          <button class="header-nav" type="text">About</button>
-          <button class="header-nav" type="text">Github</button>
-          <button class="header-nav" type="text">Docs</button>
+          <a class="header-nav"  href="#">Github</a>
+          <a class="header-nav"  href="#">Docs</a>
+          <a class="header-nav"  href="#">About</a>
           <!-- <el-menu class="topHeader" mode="horizontal">
             <el-menu-item index="1">Docs</el-menu-item>
             <el-menu-item index="2">Github</el-menu-item>
@@ -180,10 +180,14 @@ export default {
 .header-nav {
   float: right;
   height: 60px;
+  line-height: 60px;
+  text-align: center;
   margin-left: 70px !important;
   color: black;
   font-size: 15px;
   font-weight: 400;
+  border:0;
+  text-decoration:none;
 }
 .el-button+.el-button{
   margin-left: 0;
@@ -208,8 +212,7 @@ export default {
     transform: translateY(-50%);
   }
   .content-main > p {
-    margin: 1.5rem 22%;
-    width: 246px;
+    margin: 1.5rem 10%;
     font-size: 14px;
     color: rgba(255, 255, 255, 1);
     line-height: 23px;
