@@ -89,7 +89,7 @@
               <div class="content-main">
                 <p>Swift,Simple,Smart.</p>
                 <p>First OnlineIDE support Nervos.</p>
-                <p>One click to compile, deploy, test the contract.</p>
+                <p>One click to compile, deploy, test the CKB Scripts.</p>
                 <p>Interactive tutorial to assist your first dapp.</p>
               </div>
             </el-col>
