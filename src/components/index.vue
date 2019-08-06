@@ -103,7 +103,7 @@
               class="evaluation-text"
             >Serios is a development environment including tools making Scripts development faster and easier. Developers only need Bytes level CKB space comparing KB level and directly deploy JS code, making development more efficient.</p>
             <img src="../assets/img/ryan.svg" alt />
-            <p style="font-size:18px;font-weight:600;margin:0px;">Ryan</p>
+            <p style="font-size:18px;font-weight:600;margin:0px;">Jack</p>
             <p style="font-size:16px;margin-top:5px;">Business Manager of Nervos</p>
           </div>
         </el-col>
